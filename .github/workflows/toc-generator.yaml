@@ -43,7 +43,6 @@ jobs:
           # Commit and push changes
           git commit -m "chore: auto-update TOCs in Content folder
 
-🤖 Generated with local TOC script
 
 Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           git push
