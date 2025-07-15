@@ -1,5 +1,32 @@
 # Kubernetes Service Manifest Guide
 
+## Table of Contents
+
+- [Kubernetes Service Manifest Guide](#kubernetes-service-manifest-guide)
+  - [Basic Service Structure](#basic-service-structure)
+  - [Key Components Explained](#key-components-explained)
+    - [1. Metadata Section](#1-metadata-section)
+    - [2. Spec Section](#2-spec-section)
+  - [Service Types](#service-types)
+    - [1. ClusterIP (Default)](#1-clusterip-default)
+    - [2. NodePort](#2-nodeport)
+    - [3. LoadBalancer](#3-loadbalancer)
+    - [4. ExternalName](#4-externalname)
+  - [Advanced Configurations](#advanced-configurations)
+    - [Session Affinity](#session-affinity)
+    - [Multiple Ports](#multiple-ports)
+    - [External IPs](#external-ips)
+  - [Best Practices](#best-practices)
+  - [Common Commands](#common-commands)
+- [Apply service](#apply-service)
+- [Check service status](#check-service-status)
+- [View service details](#view-service-details)
+- [Get service endpoints](#get-service-endpoints)
+- [Expose deployment as service](#expose-deployment-as-service)
+- [Port forward to service](#port-forward-to-service)
+  - [Troubleshooting](#troubleshooting)
+
+
 This guide explains the structure and components of a Kubernetes Service manifest.
 
 ## Basic Service Structure
@@ -171,3 +198,4 @@ kubectl describe service <service-name>
 ```bash
 kubectl run test --image=busybox --rm -it -- wget -O- <service-name>:<port>
 ``` 
+

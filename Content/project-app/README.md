@@ -1,5 +1,30 @@
 # Rick & Morty Proxy API
 
+## Table of Contents
+
+- [Rick & Morty Proxy API](#rick-morty-proxy-api)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Running the App](#running-the-app)
+  - [Running with Docker](#running-with-docker)
+    - [Build and Run](#build-and-run)
+  - [API Endpoints](#api-endpoints)
+    - [Health Check](#health-check)
+    - [Characters](#characters)
+      - [Get characters by page](#get-characters-by-page)
+      - [Get all characters](#get-all-characters)
+      - [Get character by ID](#get-character-by-id)
+      - [Get a random character](#get-a-random-character)
+    - [Episodes](#episodes)
+      - [Get episodes by page](#get-episodes-by-page)
+      - [Get all episodes](#get-all-episodes)
+    - [Episode Characters](#episode-characters)
+  - [Response Format](#response-format)
+  - [Error Handling](#error-handling)
+
+
 This is a simple Node.js application using Express and Axios that acts as a proxy to the [Rick and Morty API](https://rickandmortyapi.com/). It provides a simplified and formatted view of characters and episodes from the show.
 
 ## Features
@@ -162,3 +187,4 @@ If an error occurs (e.g., a character doesn't exist or the API is down), the ser
 ```
 
 HTTP status codes are used appropriately (e.g., 404, 500).
+

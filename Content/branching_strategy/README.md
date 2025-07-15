@@ -1,5 +1,12 @@
 # Git Branching Strategies
 
+## Table of Contents
+
+- [Git Branching Strategies](#git-branching-strategies)
+  - [Included Branching Strategies](#included-branching-strategies)
+  - [How to Use This Directory](#how-to-use-this-directory)
+
+
 This directory contains explanations and examples of **three popular Git branching strategies** that are commonly used in modern software development workflows. Each subfolder in this directory will describe and demonstrate how the respective strategy works, including its advantages, ideal use cases, and typical Git commands involved.
 
 ## Included Branching Strategies
@@ -28,3 +35,4 @@ This collection is perfect for:
 ---
 
 > Feel free to explore the folders and adapt any of the workflows to fit your team or project needs.
+

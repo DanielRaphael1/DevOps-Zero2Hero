@@ -1,5 +1,42 @@
 # Welcome to the IPTables Tutorial
 
+## Table of Contents
+
+- [Welcome to the IPTables Tutorial](#welcome-to-the-iptables-tutorial)
+  - [Table of Contents](#table-of-contents)
+  - [Iptables Introduction](#iptables-introduction)
+  - [Tables](#tables)
+    - [What Are Tables in iptables?](#what-are-tables-in-iptables)
+    - [Key Tables in iptables](#key-tables-in-iptables)
+  - [Chains](#chains)
+    - [What Are Chains in iptables?](#what-are-chains-in-iptables)
+      - [Built-in Chains](#built-in-chains)
+      - [User-defined Chains](#user-defined-chains)
+  - [Use-Cases](#use-cases)
+    - [🐳 1. Docker Networking and NAT](#1-docker-networking-and-nat)
+- [Allow inbound traffic to the container](#allow-inbound-traffic-to-the-container)
+      - [Chains involved:](#chains-involved)
+      - [Why iptables:](#why-iptables)
+    - [🌐 2. CNI (Container Network Interface) Plugins](#2-cni-container-network-interface-plugins)
+      - [What happens:](#what-happens)
+      - [Chains/tables used:](#chainstables-used)
+    - [🔐 3. Basic Server Access Security](#3-basic-server-access-security)
+      - [What happens:](#what-happens)
+- [Default deny](#default-deny)
+- [Allow loopback](#allow-loopback)
+- [Allow SSH from specific IP](#allow-ssh-from-specific-ip)
+- [Allow HTTP/HTTPS](#allow-httphttps)
+      - [Chains used:](#chains-used)
+    - [🌍 4. VPN Gateway / Router with DNAT + MASQUERADE](#4-vpn-gateway-router-with-dnat-masquerade)
+      - [🧭 DNAT (Destination NAT) – Port Forwarding](#dnat-destination-nat-port-forwarding)
+- [Redirect port 443 on public IP to internal web server](#redirect-port-443-on-public-ip-to-internal-web-server)
+      - [🧼 MASQUERADE – Source NAT for Outgoing Traffic](#masquerade-source-nat-for-outgoing-traffic)
+- [Rewrite source IP for internal traffic to appear as the router’s public IP](#rewrite-source-ip-for-internal-traffic-to-appear-as-the-routers-public-ip)
+      - [🔒 Allow forwarding:](#allow-forwarding)
+- [Enable packet forwarding](#enable-packet-forwarding)
+- [Allow the forwarded packets](#allow-the-forwarded-packets)
+
+
 This tutorial covers the fundamentals of iptables, including introduction, different tables, chains, Use-Cases and Examples.
 
 ## Table of Contents
@@ -147,3 +184,4 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -A FORWARD -i tun0 -o eth0 -j ACCEPT
 iptables -A FORWARD -i eth0 -o tun0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 ```
+

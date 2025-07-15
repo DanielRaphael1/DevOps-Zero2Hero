@@ -1,5 +1,13 @@
 # dive
 
+## Table of Contents
+
+- [dive](#dive)
+- [for example](#for-example)
+  - [Basic Features](#basic-features)
+  - [Installation](#installation)
+
+
 **A tool for exploring a Docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.**
 
 ![Image](demo.gif)
@@ -85,3 +93,4 @@ If you use [Chocolatey](https://chocolatey.org)
 
 ```powershell
 choco install dive
+

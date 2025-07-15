@@ -11,6 +11,18 @@
 <!-- omit in toc -->
 # GitHub Copilot Setup and Configuration Guide
 
+## Table of Contents
+
+- [GitHub Copilot Setup and Configuration Guide](#github-copilot-setup-and-configuration-guide)
+  - [What you will learn in this guide?](#what-you-will-learn-in-this-guide)
+  - [Pre-requisites](#pre-requisites)
+    - [Tools](#tools)
+  - [Chapters](#chapters)
+  - [[GitHub Copilot Main Features](03-copilot-featurs.md)](#github-copilot-main-features03-copilot-featursmd)
+  - [[GitHub Copilot Setup and Configuration Guide](01-intro.md)](#github-copilot-setup-and-configuration-guide01-intromd)
+  - [[GitHub Copilot Features](02-copilot-kickstart.md)](#github-copilot-features02-copilot-kickstartmd)
+
+
 ## What you will learn in this guide?
 
 - This guide is an introduction to [GitHub Copilot](https://github.com/copilot), an AI-powered coding assistant.
@@ -69,9 +81,4 @@
  - [:page\_with\_curl: example-0102.py - Extra Instructions](02-copilot-kickstart.md#page_with_curl-example-0102py---extra-instructions)
  - [:page\_with\_curl: example-0103.py - Copilot Auto suggestions](02-copilot-kickstart.md#page_with_curl-example-0103py---copilot-auto-suggestions)
  - [:page\_with\_curl: example-0103.md - Copilot Chat Results](02-copilot-kickstart.md#page_with_curl-example-0103md---copilot-chat-results)
-
-
-
-
-
 

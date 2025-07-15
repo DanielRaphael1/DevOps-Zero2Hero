@@ -2,15 +2,16 @@
 
 ## Table of Contents
 
-- [# Welcome to the Linux Tutorial](#welcome-to-the-linux-tutorial)
-  - [## Linux Introduction](#linux-introduction)
-  - [## Linux Environment Variables](#linux-environment-variables)
-  - [## Linux File Management](#linux-file-management)
-  - [## Linux Input/Output (I/O) Redirection](#linux-inputoutput-io-redirection)
-  - [## Linux Package Management](#linux-package-management)
-  - [## Linux Processes](#linux-processes)
-  - [## Getting Started](#getting-started)
-  - [## Contributing](#contributing)
+- [Welcome to the Linux Tutorial](#welcome-to-the-linux-tutorial)
+  - [Linux Introduction](#linux-introduction)
+  - [Linux Environment Variables](#linux-environment-variables)
+  - [Linux File Management](#linux-file-management)
+  - [Linux Input/Output (I/O) Redirection](#linux-inputoutput-io-redirection)
+  - [Linux Package Management](#linux-package-management)
+  - [Linux Processes](#linux-processes)
+  - [Getting Started](#getting-started)
+  - [Contributing](#contributing)
+
 
 
 

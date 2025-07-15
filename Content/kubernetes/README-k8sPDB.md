@@ -1,5 +1,18 @@
 # Pod Disruption Budget (PDB)
 
+## Table of Contents
+
+- [Pod Disruption Budget (PDB)](#pod-disruption-budget-pdb)
+  - [What is a PDB?](#what-is-a-pdb)
+  - [Why Use It?](#why-use-it)
+  - [How It Works](#how-it-works)
+  - [Example 1: `minAvailable`](#example-1-minavailable)
+  - [Example 2: `maxUnavailable`](#example-2-maxunavailable)
+  - [Apply the PDB](#apply-the-pdb)
+  - [View All PDBs](#view-all-pdbs)
+  - [Check PDB Details](#check-pdb-details)
+
+
 ## What is a PDB?
 
 A **Pod Disruption Budget (PDB)** in Kubernetes helps control how many pods can be voluntarily evicted (e.g., during node maintenance, scaling, or draining) without affecting application availability. It ensures that a minimum number or percentage of pods remain running to keep the service responsive.
@@ -72,3 +85,4 @@ kubectl get poddisruptionbudgets
 ```bash
 kubectl describe pdb my-app-pdb-min
 ```
+

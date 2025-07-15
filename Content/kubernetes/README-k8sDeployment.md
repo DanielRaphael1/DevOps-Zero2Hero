@@ -1,5 +1,28 @@
 # Kubernetes Deployment Manifest Guide
 
+## Table of Contents
+
+- [Kubernetes Deployment Manifest Guide](#kubernetes-deployment-manifest-guide)
+  - [Basic Deployment Structure](#basic-deployment-structure)
+  - [Key Components Explained](#key-components-explained)
+    - [1. Metadata Section](#1-metadata-section)
+    - [2. Spec Section](#2-spec-section)
+    - [3. Template Section](#3-template-section)
+  - [Common Fields to Add](#common-fields-to-add)
+    - [Resource Limits](#resource-limits)
+    - [Environment Variables](#environment-variables)
+    - [Health Checks](#health-checks)
+  - [Best Practices](#best-practices)
+  - [Common Commands](#common-commands)
+- [Apply deployment](#apply-deployment)
+- [Check deployment status](#check-deployment-status)
+- [View deployment details](#view-deployment-details)
+- [View pod status](#view-pod-status)
+- [View deployment logs](#view-deployment-logs)
+- [Scale deployment](#scale-deployment)
+- [Update deployment](#update-deployment)
+
+
 This guide explains the structure and components of a Kubernetes Deployment manifest.
 
 ## Basic Deployment Structure
@@ -96,3 +119,4 @@ kubectl scale deployment <deployment-name> --replicas=3
 # Update deployment
 kubectl set image deployment/<deployment-name> nginx=nginx:1.19
 ``` 
+

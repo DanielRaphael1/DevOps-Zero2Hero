@@ -4,6 +4,14 @@
 
 # Docker Zero to Hero 🐳
 
+## Table of Contents
+
+- [Docker Zero to Hero 🐳](#docker-zero-to-hero)
+  - [📚 Table of Contents](#table-of-contents)
+  - [✅ How to Use](#how-to-use)
+  - [📣 Contribute](#contribute)
+
+
 Welcome to the **Docker Zero to Hero** guide!
 
 This section of the DevOps-Zero2Hero course provides a step-by-step, beginner-friendly deep dive into **Docker**. Whether you're completely new to containers or looking to refine your skills, this guide is for you.
@@ -38,3 +46,4 @@ Feel free to contribute at:
 [https://github.com/nirgeier/DevOps-Zero2Hero](https://github.com/nirgeier/DevOps-Zero2Hero)
 
 Happy Learning! 🐳
+

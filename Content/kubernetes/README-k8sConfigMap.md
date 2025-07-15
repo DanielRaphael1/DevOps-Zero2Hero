@@ -1,5 +1,32 @@
 # Kubernetes ConfigMap Manifest Guide
 
+## Table of Contents
+
+- [Kubernetes ConfigMap Manifest Guide](#kubernetes-configmap-manifest-guide)
+  - [Basic ConfigMap Structure](#basic-configmap-structure)
+  - [Key Components Explained](#key-components-explained)
+    - [1. Metadata Section](#1-metadata-section)
+    - [2. Data Section](#2-data-section)
+  - [Creating ConfigMaps](#creating-configmaps)
+    - [1. From Literal Values](#1-from-literal-values)
+    - [2. From Files](#2-from-files)
+    - [3. From Directory](#3-from-directory)
+  - [Using ConfigMaps in Pods](#using-configmaps-in-pods)
+    - [1. As Environment Variables](#1-as-environment-variables)
+    - [2. As Single Environment Variable](#2-as-single-environment-variable)
+    - [3. As Volume Mount](#3-as-volume-mount)
+  - [Best Practices](#best-practices)
+  - [Common Commands](#common-commands)
+- [Create ConfigMap from literal values](#create-configmap-from-literal-values)
+- [Create ConfigMap from file](#create-configmap-from-file)
+- [Create ConfigMap from directory](#create-configmap-from-directory)
+- [View ConfigMap](#view-configmap)
+- [Edit ConfigMap](#edit-configmap)
+- [Delete ConfigMap](#delete-configmap)
+  - [Troubleshooting](#troubleshooting)
+  - [Important Notes](#important-notes)
+
+
 This guide explains the structure and components of a Kubernetes ConfigMap manifest.
 
 ## Basic ConfigMap Structure
@@ -204,3 +231,4 @@ kubectl exec <pod-name> -- env | grep <config-key>
 5. ConfigMaps are namespace-scoped
 6. Updates to ConfigMap may require pod restart
 7. Use ConfigMap volume for file-based configurations 
+

@@ -3,6 +3,20 @@
 
 # ArgoCD Lab
 
+## Table of Contents
+
+- [ArgoCD Lab](#argocd-lab)
+  - [Prerequisites](#prerequisites)
+  - [📁 Project Structure](#project-structure)
+    - [This project is organized as follows:](#this-project-is-organized-as-follows)
+  - [🚀 Quick Start](#quick-start)
+    - [1. Install ArgoCD on your cluster:](#1-install-argocd-on-your-cluster)
+    - [2. Port forward ArgoCD UI:](#2-port-forward-argocd-ui)
+    - [3. Login to ArgoCD:](#3-login-to-argocd)
+    - [4. Apply the ArgoCD Application manifest:](#4-apply-the-argocd-application-manifest)
+    - [Watch your app get deployed automatically!](#watch-your-app-get-deployed-automatically)
+
+
 Welcome to the **ArgoCD  Deployment Lab**! 🚀  
 In this lab, you'll learn how to deploy a simple web application using **ArgoCD**, **GitOps** principles, and **Kubernetes**. 
 
@@ -58,3 +72,4 @@ kubectl apply -f argocd/application.yaml
 ```
 
 ### Watch your app get deployed automatically!
+

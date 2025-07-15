@@ -1,5 +1,25 @@
 # Local Kubernetes Development with kind
 
+## Table of Contents
+
+- [Local Kubernetes Development with kind](#local-kubernetes-development-with-kind)
+  - [Prerequisites](#prerequisites)
+  - [Step 1: Create a kind Cluster](#step-1-create-a-kind-cluster)
+- [Create a new kind cluster](#create-a-new-kind-cluster)
+- [Verify cluster is running](#verify-cluster-is-running)
+  - [Step 2: Create Deployment Files](#step-2-create-deployment-files)
+    - [Create nginx-deployment.yaml:](#create-nginx-deploymentyaml)
+    - [Create nginx-service.yaml:](#create-nginx-serviceyaml)
+    - [Create nginx-html-configmap.yaml:](#create-nginx-html-configmapyaml)
+  - [Step 3: Deploy the Application](#step-3-deploy-the-application)
+- [Apply all manifests](#apply-all-manifests)
+- [Check deployment status](#check-deployment-status)
+  - [Step 4: Access the Application](#step-4-access-the-application)
+- [Forward the service port](#forward-the-service-port)
+  - [Cleanup](#cleanup)
+  - [Troubleshooting](#troubleshooting)
+
+
 This guide will help you set up a local Kubernetes cluster using kind and deploy a simple Nginx service with a static HTML file.
 
 ## Prerequisites
@@ -138,3 +158,4 @@ kind delete cluster --name dev-cluster
   ```bash
   kubectl describe pod <pod-name>
   ``` 
+

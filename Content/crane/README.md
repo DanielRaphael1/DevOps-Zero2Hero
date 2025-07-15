@@ -1,19 +1,21 @@
 # Crane – A Modern Tool for Container Images
 
+## Table of Contents
+
+- [Crane – A Modern Tool for Container Images](#crane-a-modern-tool-for-container-images)
+  - [Overview](#overview)
+  - [Why Use Crane?](#why-use-crane)
+  - [Architecture at a Glance](#architecture-at-a-glance)
+- [Example of the difference from docker method](#example-of-the-difference-from-docker-method)
+  - [Installation](#installation)
+  - [Basic commands explanation](#basic-commands-explanation)
+
+
 ![Crane Logo](../../resources/images/logos/logos_crane.svg)
 
 Crane is a lightweight, daemonless command-line tool from Google’s Go Container Registry project that revolutionizes container image management. It simplifies workflows by replacing multi-step Docker CLI operations (pull, tag, push) with streamlined, efficient commands—empowering users from beginners to advanced practitioners.
 
 ---
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Why Use Crane?](#why-use-crane)
-- [Architecture at a Glance](#architecture-at-a-glance)
-- [difference from docker method](#Example-of-the-difference-from-docker-method)
-- [Installation](#installation)
-- [Basic commands explanation](#basic-commands-explanation)
 
 
 ---
@@ -95,8 +97,4 @@ Crane is distributed as a single binary that you can quickly install on your sys
 - **crane tag**: Create or move a tag on a remote image  
 - **crane validate**: Validate that an image is well-formed  
 - **crane version**: Print the version
-
-
-
-
 

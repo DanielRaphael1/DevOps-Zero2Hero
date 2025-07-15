@@ -1,5 +1,23 @@
 # Vim - Text Editor
 
+## Table of Contents
+
+- [Vim - Text Editor](#vim-text-editor)
+  - [1. Introduction](#1-introduction)
+    - [Key Features:](#key-features)
+  - [2. Installation](#2-installation)
+    - [Unix/Linux](#unixlinux)
+- [Debian/Ubuntu](#debianubuntu)
+- [Red Hat/CentOS](#red-hatcentos)
+- [macOS (using Homebrew)](#macos-using-homebrew)
+  - [3. Basic Vim Modes](#3-basic-vim-modes)
+  - [4. Essential Commands](#4-essential-commands)
+    - [Navigation](#navigation)
+    - [Editing](#editing)
+    - [Saving and Quitting](#saving-and-quitting)
+  - [5. Resources](#5-resources)
+
+
 <div align="center">
   <img src="../../resources/images/logos/logos_vim.svg" alt="Vim Logo" width="200">
 </div>
@@ -7,14 +25,6 @@
 ---
 
 <!-- omit in toc -->
-## Table of Contents
-
-- [1. Introduction](#1-introduction)
-- [2. Installation](#2-installation)
-- [3. Basic Vim Modes](#3-basic-vim-modes)
-- [4. Essential Commands](#4-essential-commands)
-- [5. Resources](#5-resources)
-
 ---
 
 ## 1. Introduction
@@ -106,3 +116,4 @@ For example, `5j` moves down 5 lines, and `3k` moves up 3 lines.
 - [Vim Official Documentation](https://www.vim.org/docs.php)
 - [Vim Awesome](https://vimawesome.com/) - Plugins directory
 - [Vim Cheat Sheet](https://vim.rtorr.com/)
+

@@ -1,5 +1,14 @@
 # GitHub Updates Tracker with n8n
 
+## Table of Contents
+
+- [GitHub Updates Tracker with n8n](#github-updates-tracker-with-n8n)
+    - [1. Overview of the complete workflow  ](#1-overview-of-the-complete-workflow)
+  - [Project Goals](#project-goals)
+  - [Table of Contents](#table-of-contents)
+  - [Useful Links](#useful-links)
+
+
 This project is an automation built with n8n that monitors GitHub for new or recently updated repositories from major tech companies such as Google and Microsoft.  
 Whenever a new repository is added or an existing one is updated, the system sends an email alert with key details.
 

@@ -1,5 +1,24 @@
 # 🐳 Dockerfile Use Case and Commands
 
+## Table of Contents
+
+- [🐳 Dockerfile Use Case and Commands](#dockerfile-use-case-and-commands)
+  - [🧠 Use Case](#use-case)
+  - [🛠️ Dockerfile Commands Overview](#dockerfile-commands-overview)
+  - [Prerequisites](#prerequisites)
+  - [🧪 Example Dockerfile](#example-dockerfile)
+- [Use the official NGINX image](#use-the-official-nginx-image)
+- [Expose port 80](#expose-port-80)
+- [NGINX is started by default, so no need to override CMD](#nginx-is-started-by-default-so-no-need-to-override-cmd)
+  - [🚀 How to Build and Run](#how-to-build-and-run)
+    - [Copy the Dockerfile example above to a file named "Dockerfile" (make sure you have Docker runing on your computer)](#copy-the-dockerfile-example-above-to-a-file-named-dockerfile-make-sure-you-have-docker-runing-on-your-computer)
+    - [Build the Docker Image](#build-the-docker-image)
+    - [Run the Container](#run-the-container)
+    - [Debug container issue](#debug-container-issue)
+    - [Stop the Container](#stop-the-container)
+  - [✅ Summary](#summary)
+
+
 ## 🧠 Use Case
 
 This project uses a `Dockerfile` to containerize an application, allowing us to package the app and its dependencies into a lightweight, portable container image. This ensures consistency across development, testing, and production environments.

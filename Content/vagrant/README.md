@@ -1,3 +1,11 @@
+## Table of Contents
+
+  - [What is Vagrant?](#what-is-vagrant)
+  - [Installation Guide:](#installation-guide)
+  - [How to use vagrant:](#how-to-use-vagrant)
+    - [Running a Vagrantfile (using pre-configured vagarntfile)](#running-a-vagrantfile-using-pre-configured-vagarntfile)
+
+
 ## What is Vagrant?
 
 Vagrant is an open-source tool developed by **HashiCorp**. It provides a simple and consistent workflow for managing virtualized development environments. By using Vagrant, developers can create and configure lightweight, reproducible, and portable virtual environments with ease.
@@ -37,27 +45,3 @@ You will see now this lines and new file called vagrantfile will appear in your 
     vagrant ssh <name of the VM>
     ```
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
