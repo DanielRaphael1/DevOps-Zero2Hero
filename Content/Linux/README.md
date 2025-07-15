@@ -1,15 +1,20 @@
 # Welcome to the Linux Tutorial
 
-This tutorial covers the fundamentals of Linux, including introduction, environment variables, file management, I/O redirection, package management, and process handling.
-
 ## Table of Contents
 
-1. [Linux Introduction](#linux-introduction)
-2. [Linux Environment Variables](#linux-environment-variables)
-3. [Linux File Management](#linux-file-management)
-4. [Linux Input/Output (I/O) Redirection](#linux-inputoutput-io-redirection)
-5. [Linux Package Management](#linux-package-management)
-6. [Linux Processes](#linux-processes)
+- [# Welcome to the Linux Tutorial](#welcome-to-the-linux-tutorial)
+  - [## Linux Introduction](#linux-introduction)
+  - [## Linux Environment Variables](#linux-environment-variables)
+  - [## Linux File Management](#linux-file-management)
+  - [## Linux Input/Output (I/O) Redirection](#linux-inputoutput-io-redirection)
+  - [## Linux Package Management](#linux-package-management)
+  - [## Linux Processes](#linux-processes)
+  - [## Getting Started](#getting-started)
+  - [## Contributing](#contributing)
+
+
+
+This tutorial covers the fundamentals of Linux, including introduction, environment variables, file management, I/O redirection, package management, and process handling.
 
 ---
 
@@ -92,3 +97,4 @@ To follow this tutorial, you will need:
 We welcome contributions to improve this tutorial. Feel free to fork this repository, suggest improvements, or add new sections.
 
 ---
+

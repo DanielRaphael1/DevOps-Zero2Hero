@@ -1,0 +1,49 @@
+name: Update TOCs in Content folder
+
+on: 
+  push:
+    paths:
+      - 'Content/**/*.md'
+  pull_request:
+    paths:
+      - 'Content/**/*.md'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-toc:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Make script executable
+        run: chmod +x generate-toc.sh
+
+      - name: Generate TOCs for Content folder only
+        run: ./generate-toc.sh Content
+
+      - name: Commit TOC updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add only README files in Content folder
+          git add Content/**/README*.md
+          
+          # Check if there are changes to commit
+          if git diff --cached --quiet; then
+            echo "No TOC changes to commit."
+            exit 0
+          fi
+          
+          # Commit and push changes
+          git commit -m "chore: auto-update TOCs in Content folder
+
+🤖 Generated with local TOC script
+
+Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          git push
